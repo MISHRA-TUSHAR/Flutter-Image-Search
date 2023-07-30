@@ -1,12 +1,21 @@
-## Getting Started
+This is a simple image search application built using Flutter and Dart. It communicates with the Unsplash API to fetch images based on user-defined search terms.
 
-This project is a starting point for a Flutter application.
+Features
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Fetches images from the Unsplash API based on a user-defined keyword.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Displays images in a beautifully designed UI.
+
+
+Integrated functionality to dismiss the keyboard automatically after a search is initiated.
+
+
+More features are coming soon!
+
+**App ScreenShots**
+![Screenshot_1690739228](https://github.com/MISHRA-TUSHAR/Flutter-Image-Search/assets/109910958/cb04dbba-5ac2-4ef9-b713-6ebd05feda54)
+
+![Screenshot_1690739239](https://github.com/MISHRA-TUSHAR/Flutter-Image-Search/assets/109910958/52663930-226a-422b-a7c8-be68f6ddfecb)
+
