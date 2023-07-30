@@ -56,7 +56,7 @@ class ImageSearchFormState extends State<ImageSearchForm> {
     final response = await http.get(
       Uri.parse(apiUrl),
       headers: {
-        'Authorization': 'Client-ID W3vIlEtAdyL_s0-KcwDCXDmMJhKHcJy2waxDTkQVjrk'
+        'Authorization': 'Client-ID xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
       },
     );
 
