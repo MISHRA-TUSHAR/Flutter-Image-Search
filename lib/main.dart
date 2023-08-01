@@ -56,7 +56,7 @@ class ImageSearchFormState extends State<ImageSearchForm> {
     final response = await http.get(
       Uri.parse(apiUrl),
       headers: {
-        'Authorization': 'Client-ID xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        'Authorization': 'Client-ID unsplash api key'
       },
     );
 
