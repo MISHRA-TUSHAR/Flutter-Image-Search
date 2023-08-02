@@ -152,7 +152,8 @@ class ImageSearchFormState extends State<ImageSearchForm> {
                             _sliderValue = value;
                             _transformationController.value = Matrix4.identity()
                               ..scale(_sliderValue);
-                          });
+                          },
+                          );
                         },
                       ),
                 SizedBox(height: 50),
