@@ -17,5 +17,6 @@ More features are coming soon!
 **App ScreenShots**
 ![Screenshot_1690739228](https://github.com/MISHRA-TUSHAR/Flutter-Image-Search/assets/109910958/cb04dbba-5ac2-4ef9-b713-6ebd05feda54)
 
-![Screenshot_1690739239](https://github.com/MISHRA-TUSHAR/Flutter-Image-Search/assets/109910958/52663930-226a-422b-a7c8-be68f6ddfecb)
+![Screenshot_1690970611](https://github.com/MISHRA-TUSHAR/Flutter-Image-Search/assets/109910958/e39448db-a27c-4bee-a81d-26930e3d4e8a)
+
 
