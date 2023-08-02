@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -49,6 +50,10 @@ class ImageSearchFormState extends State<ImageSearchForm> {
   final _formKey = GlobalKey<FormState>();
   final _controller = TextEditingController();
   String? _url;
+
+  TransformationController _transformationController =
+      TransformationController();
+  double _sliderValue = 0.5;
 
   Future<String> fetchImageUrl(String searchTerm) async {
     String apiUrl = 'https://api.unsplash.com/search/photos?query=$searchTerm';
@@ -130,7 +135,25 @@ class ImageSearchFormState extends State<ImageSearchForm> {
                             width: 3.0,
                           ),
                         ),
-                        child: Image.network(_url!),
+                        child: InteractiveViewer(
+                          transformationController: _transformationController,
+                          child: Image.network(_url!),
+                        ),
+                      ),
+                SizedBox(height: 20),
+                _url == null
+                    ? Container()
+                    : CupertinoSlider(
+                        value: _sliderValue,
+                        min: 0.1,
+                        max: 2.0,
+                        onChanged: (double value) {
+                          setState(() {
+                            _sliderValue = value;
+                            _transformationController.value = Matrix4.identity()
+                              ..scale(_sliderValue);
+                          });
+                        },
                       ),
                 SizedBox(height: 50),
               ],
